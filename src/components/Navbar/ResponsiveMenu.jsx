@@ -3,19 +3,24 @@ import React from 'react'
 
 const ResponsiveMenu = ({open}) => {
   return (
-    <AnimatePresence>       
+    <AnimatePresence mode='wait'>       
     {
         open && (
-            <motion.div
-            initial= {{ opacity : 0 }}
-            animate= {{ opacity : 1 }}
-            exit= {{ opacity : 0 }}
-            className = "fixed top-0 left-0 w-full h-full bg-black/60 z-10"
-            >
-            <div>
-
+          <motion.div
+            initial= {{ opacity : 0, y : -100 }}
+            animate= {{ opacity : 1, y : 0 }}
+            exit= {{ opacity : 0, y : -100 }}
+            transition= {{ duration : 0.3 }}
+            className = "absolute top-20 left-0 w-full h-screen z-20">
+            <div className='text-xl font-semibold uppercase bg-primary text-white py-10 m-6 rounded-3xl'>
+              <ul className='flex flex-col justify-center items-center gap-10'>
+                <li>Home</li>
+                <li>Abour</li>
+                <li>Service</li>
+                <li>Contact</li>
+              </ul>
             </div>
-            </motion.div>
+          </motion.div>
         )
     }
     </AnimatePresence>       
