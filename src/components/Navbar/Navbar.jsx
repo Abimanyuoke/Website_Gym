@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="container flex justify-between items-center py-8">
             {/* Logo section  */}
             <div className='text-2xl flex items-center gap-2
-             font-bold py-8 uppercase'>
+             font-bold py-4 uppercase'>
                 <FaDumbbell/>
                 <p>Coders</p>
                 <p className='text-secondary'>Gym</p>
@@ -26,9 +26,11 @@ const Navbar = () => {
                 <ul className='flex items-center gap-6 text-gray-600'>
                     {
                         NavbarMenu.map((item) => {
-                            return <li key = {item.id}>
+                            return (
+                                <li key = {item.id}>
                                 <a href={item.link} className='inline-block py-1 px-3 hover:text-primary font-semibold'>{item.title}</a>
                                 </li>
+                            )
                         })
                     }
                 </ul>

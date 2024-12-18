@@ -2,13 +2,14 @@ import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import BgImage from './assets/bg.png'
+import Equipments from './components/Equipments/Equipments';
 
 const bgStyle = {
   backgroundImage: `url(${BgImage})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "center",
-  backgroundAttachement: "fixed",
+  backgroundAttachment: "fixed",
 };
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Navbar/>
         <Hero/>
       </div>
+        <Equipments/>
     </div>
   )
 }
