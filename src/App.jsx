@@ -15,6 +15,7 @@ const bgStyle = {
 
 import img1 from './assets/2.png';
 import img2 from './assets/3.png';
+import TabComp from './components/Tab/TabComp';
 
 const BannerData = {
   image: img1,
@@ -39,7 +40,8 @@ const App = () => {
       </div>
         <Equipments/>
         <Banner {...BannerData}/>
-        {/* <Banner {...Banner2Data}/> */}
+        <TabComp/>
+        <Banner {...Banner2Data}/>
     </div>
   )
 }
