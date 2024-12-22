@@ -18,6 +18,7 @@ const bgStyle = {
 
 import img1 from './assets/2.png';
 import img2 from './assets/3.png';
+import Footer from './components/Footer/Footer';
 
 const BannerData = {
   image: img1,
@@ -46,6 +47,7 @@ const App = () => {
         <Banner {...Banner2Data}/>
         <Testimonials/>
         <Banner2/>
+        <Footer/>
     </div>
   )
 }
