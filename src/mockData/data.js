@@ -80,3 +80,34 @@ export const ProductsData = [
     },
 ]
 
+export const TestimonialsData = [
+    {
+        id: 1,
+        name: "John Doe",
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque iusto ipsum quod commodi, magni vitae.",
+        img: "https://picsum.photos/102/102",
+        delay: 0.2
+    },
+    {
+        id: 2,
+        name: "Steve Smith",
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque iusto ipsum quod commodi, magni vitae.",
+        img: "https://picsum.photos/102/101",
+        delay: 0.5
+    },
+    {
+        id: 3,
+        name: "Alexander Abraham",
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque iusto ipsum quod commodi, magni vitae.",
+        img: "https://picsum.photos/102/103",
+        delay: 0.8
+    },
+    {
+        id: 4,
+        name: "Ariana",
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque iusto ipsum quod commodi, magni vitae.",
+        img: "https://picsum.photos/102/104",
+        delay: 1.1
+    },
+]
+

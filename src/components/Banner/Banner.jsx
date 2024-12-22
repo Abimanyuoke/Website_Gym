@@ -7,7 +7,7 @@ const Banner = ({image, title, subtitle, link}) => {
     <div className='container'>
         <div className='grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14'>
             {/* Banner Image section */}
-            <div>
+            <div className='flex justify-center items-center'>
                 <motion.img
                  initial = {{opacitiy: 0, scale: 0.5}}
                  whileInView={{opacity: 1, scale: 1}}

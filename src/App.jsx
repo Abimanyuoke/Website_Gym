@@ -4,6 +4,9 @@ import Hero from './components/Hero/Hero'
 import BgImage from './assets/bg.png'
 import Equipments from './components/Equipments/Equipments';
 import Banner from './components/Banner/Banner';
+import TabComp from './components/Tab/TabComp';
+import Testimonials from './components/Testimonials/Testimonials';
+import Banner2 from './components/Banner/Banner2';
 
 const bgStyle = {
   backgroundImage: `url(${BgImage})`,
@@ -15,7 +18,6 @@ const bgStyle = {
 
 import img1 from './assets/2.png';
 import img2 from './assets/3.png';
-import TabComp from './components/Tab/TabComp';
 
 const BannerData = {
   image: img1,
@@ -42,6 +44,8 @@ const App = () => {
         <Banner {...BannerData}/>
         <TabComp/>
         <Banner {...Banner2Data}/>
+        <Testimonials/>
+        <Banner2/>
     </div>
   )
 }
