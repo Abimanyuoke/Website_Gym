@@ -23,7 +23,7 @@ const EquipmentData = [
         delay: 0.6,
     },
     {
-        id: 1,
+        id: 3,
         title: "Fitness Equipments",
         desc: "It is along established dact that a reader readable.",
         link: "/",
